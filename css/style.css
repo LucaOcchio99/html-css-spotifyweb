@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+/* UTILITIES */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* HEADER */
+header {
+    height: 100px;
+    background-color: lightcoral;
+}
+
+/* MAIN */
+main {
+    background-color: lightgrey;
+    flex-grow: 1;
+    display: flex;
+}
+
+aside {
+   width: 15%;
+   height: 100%;
+   background-color: lightseagreen;
+}
+
+article {
+    width: 85%;
+    height: 100%;
+    background-color: lightyellow;
+}
+
+/* FOOTER */
+footer {
+    height: 100px;
+    background-color: lightgreen;
+}
