@@ -11,10 +11,38 @@ body {
     height: 100vh;
 }
 
+.mg_left {
+    margin-left: 5px;
+}
+
+.mg_right {
+    margin-right: 5px;
+}
+
 /* HEADER */
 header {
-    height: 100px;
-    background-color: lightcoral;
+    height: 10%;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 70%;
+}
+
+header button {
+    height: 70%;
+    border: 0.5px solid black;
+    border-radius: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    border-color: white;
+    background-color: black;
+    cursor: pointer;
 }
 
 /* MAIN */
@@ -30,14 +58,37 @@ aside {
    background-color: lightseagreen;
 }
 
+.parte_superiore {
+    height: 60%;
+    background-color: lightskyblue;
+}
+
+.parte_inferiore {
+    height: 40%;
+    background-color: lightyellow;
+}
+
 article {
     width: 85%;
     height: 100%;
     background-color: lightyellow;
+    overflow-y: auto;
+}
+
+nav {
+    height: 15%;
+    background-color: lightslategrey;
+}
+
+
+section {
+    height: 40%;
+    background-color: lightpink;
+    border: 0.5px solid black;
 }
 
 /* FOOTER */
 footer {
-    height: 100px;
+    height: 60px;
     background-color: lightgreen;
 }
