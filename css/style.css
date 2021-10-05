@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+
 /* UTILITIES */
 body {
     display: flex;
@@ -11,12 +16,24 @@ body {
     height: 100vh;
 }
 
-.mg_left {
-    margin-left: 5px;
+.mg_top {
+    margin-top: 15px;
 }
 
-.mg_right {
-    margin-right: 5px;
+.mg_top2 {
+    margin-top: 25px;
+}
+
+.pd_bottom {
+    padding-bottom: 10px;
+}
+
+.pd_left {
+    padding-left: 15px;
+}
+
+.pd_right {
+    padding-right: 15px;
 }
 
 /* HEADER */
@@ -45,6 +62,7 @@ header button {
     cursor: pointer;
 }
 
+
 /* MAIN */
 main {
     background-color: lightgrey;
@@ -63,9 +81,18 @@ aside {
     background-color: lightskyblue;
 }
 
+li img {
+    height: 30px;
+}
+
 .parte_inferiore {
     height: 40%;
     background-color: lightyellow;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 article {
@@ -80,12 +107,22 @@ nav {
     background-color: lightslategrey;
 }
 
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 section {
-    height: 40%;
+    height: 50%;
     background-color: lightpink;
     border: 0.5px solid black;
 }
+
+section img {
+    height: 50%;
+}
+
 
 /* FOOTER */
 footer {
