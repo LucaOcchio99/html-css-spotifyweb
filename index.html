@@ -7,6 +7,9 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -23,7 +26,7 @@
                <a href=""> <img src="./img/home.svg" alt="Home"> <p>Home</p> </a> 
                <a href=""> <img src="./img/search.svg" alt="Cerca"> <p>Cerca</p> </a> 
                <a href=""> <img src="./img/libreria.svg" alt="La tua libreria"> <p>La tua libreria</p> </a>
-                <p class="pd_top">PLAYLIST</p>
+                <p class="mg_top">PLAYLIST</p>
                <a href=""> <i class="fas fa-plus-square"></i> <p>Crea Playlist</p> </a> 
                <a href=""> <p>Nome Playlist</p> </a> 
                <a href=""> <p>Nome Playlist</p> </a>
@@ -49,7 +52,7 @@
                     <li> <a href="">SCOPRI</a> </li>
                 </ul>
             </nav>
-            <section class="pd_left_right">
+            <section class="pd_left_right pd_top_bottom">
                 <p class="mg_bottom2 mg_top2">Recently played</p>
                 <ul>
                     <li>
@@ -84,9 +87,9 @@
                     </li>
                 </ul>
             </section>
-            <section class="pd_left_right">
-                <p class="mg_top2">Recently played</p>
-                <p class="mg_bottom2">dsadsa</p>
+            <section class="pd_left_right pd_top_bottom">
+                <p class="mg_top2">Creato per John Doe</p>
+                <p class="mg_bottom2">Più ascolti, più accurati saranno i suggerimenti.</p>
                 <ul>
                     <li>
                         <img src="./img/radar.jpeg" alt="Relase Radar "> 
@@ -98,19 +101,17 @@
                     </li>
                 </ul>
             </section>
-            <section class="pd_left_right">
-                <p class="mg_top2">Recently played</p>
-                <p class="mg_bottom2">asdsa</p>
+            <section class="pd_left_right pd_top_bottom">
+                <p class="mg_top2">Artisti più popolari</p>
+                <p class="mg_bottom2">Più ascolti, più acccurati saranno i suggermenti.</p>
                 <ul>
                     <li>
-                        <img src="./img/youg.jpeg" alt="Heavy Metal"> 
-                        <p class="mg_top2">Heavy Metal</p>
-                        <p class="mg_top2">Subtitle</p>
+                        <img class="cerchio" src="./img/youg.jpeg" alt="Heavy Metal"> 
+                        <p class="mg_top2">Lana del Ray</p>
                     </li>
                     <li>
-                        <img src="./img/einaudi.jpeg" alt="Heavy Metal"> 
-                        <p class="mg_top2">Heavy Metal</p>
-                        <p class="mg_top2">Subtitle</p>
+                        <img class="cerchio" src="./img/einaudi.jpeg" alt="Heavy Metal"> 
+                        <p class="mg_top2">Ludovico Einaudi</p>
                     </li>
                 </ul>
             </section>
@@ -119,19 +120,34 @@
 
     <!-- APP FOOTER CONTENT -->
     <footer>
-        <div class="content_footer pd_left_right">
-            <img src="./img/sinister.jpeg" alt="sinister">
-            <p>Sinister <br> Brano Nome</p>
-            <i class="far fa-heart"></i>
+        <div class="content_footer pd_left_right content_footer_left">
+            <img class="mg_right" src="./img/sinister.jpeg" alt="sinister">
+            <p class="mg_right">Sinister <br> Brano Nome</p>
+            <i class="far fa-heart mg_right"></i>
             <i class="far fa-folder"></i>   
         </div>
          
-        <div class="content_footer"></div>
+        <div class="content_footer" id="content_footer_center">
+            <ul>
+               <li> <i class="fas fa-sliders-h"></i> </li> 
+               <li> <i class="fas fa-angle-double-left"> </i>
+               <li> <i class="far fa-play-circle"></i></li> 
+               <li> <i class="fas fa-angle-double-right"></i> </li> 
+               <li> <i class="fas fa-redo"></i> </li> 
+            </ul>
 
-        <div class="content_footer">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-desktop"></i>
+            <ul>
+              <li> <span>0:25</span> </li>
+              <li> <div class="est"> <div class="int"></div> </div> </li>
+              <li> <span>4:35</span> </li>
+            </ul>
         </div>
+
+        <div class="content_footer pd_left_right" id="content_footer_right" >
+            <i class="fas fa-bars mg_right"></i>
+            <i class="fas fa-desktop mg_right"></i>
+            <i class="fas fa-volume-up mg_right"></i>
+            <div class="esterno"> <div class="interno"></div> </div>           
     </footer>
 </body>
 </html>
